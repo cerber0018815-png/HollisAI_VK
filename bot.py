@@ -576,4 +576,4 @@ async def handle_message(message: Message):
 # ===== ЗАПУСК =====
 if __name__ == "__main__":
     print("🚀 Бот для ВК запущен...")
-    bot.run_polling()
+    bot.run_forever()
