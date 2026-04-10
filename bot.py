@@ -574,10 +574,6 @@ async def handle_message(message: Message):
         await refresh_timer(user_id, peer_id)
 
 # ===== ЗАПУСК =====
-async def main():
-    print("🚀 Бот для ВК запущен...")
-    await bot.run_polling()
-
 if __name__ == "__main__":
     print("🚀 Бот для ВК запущен...")
     bot.run_polling()
