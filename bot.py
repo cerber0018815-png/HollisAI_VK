@@ -579,4 +579,5 @@ async def main():
     await bot.run_polling()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    print("🚀 Бот для ВК запущен...")
+    bot.run_polling()
