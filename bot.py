@@ -9,7 +9,6 @@ from dotenv import load_dotenv
 from vkbottle.bot import Bot, Message
 from vkbottle import Keyboard, KeyboardButtonColor, Text
 from vkbottle.bot import BotLabeler
-from vkbottle.tools import Keyboard, KeyboardButtonColor, Text
 
 # ===== ЗАГРУЗКА ПЕРЕМЕННЫХ =====
 load_dotenv()
