@@ -6,7 +6,8 @@ import os
 import json
 import sqlite3
 from dotenv import load_dotenv
-from vkbottle import Bot, Message
+from vkbottle.bot import Bot, Message
+from vkbottle import Keyboard, KeyboardButtonColor, Text
 from vkbottle.bot import BotLabeler
 from vkbottle.tools import Keyboard, KeyboardButtonColor, Text
 
