@@ -28,6 +28,14 @@ USE_AI_WELCOME = os.getenv('USE_AI_WELCOME', 'True').lower() in ('true', '1', 'y
 bot = Bot(token=VK_TOKEN)
 labeler = BotLabeler()
 
+# ===== ОТЛАДОЧНЫЙ ОБРАБОТЧИК (временно) =====
+@labeler.message()
+async def debug_handler(message: Message):
+    print(f"🔍 Получено сообщение: '{message.text}' от пользователя {message.from_id}")
+    # Отправляем тестовый ответ, чтобы убедиться, что бот отвечает
+    await message.answer("✅ Бот работает! Вы написали: " + message.text)
+# ============================================
+
 # ===== БАЗА ДАННЫХ (только кулдаун) =====
 DB_PATH = "bot_data.db"
 
